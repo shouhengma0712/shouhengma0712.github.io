@@ -1,12 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Personal homepage of Qizhen Liu, an undergraduate student at Nanjing University."
+  />
   <title>Qizhen Liu</title>
+
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <h1>Qizhen Liu</h1>
-  <p>Nanjing University</p>
-  <p>Email: 201880163@smail.nju.edu.cn</p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top">QL</a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about" data-en="About" data-zh="关于">About</a>
+      <a href="#education" data-en="Education" data-zh="教育经历">Education</a>
+      <a href="#focus" data-en="Current Focus" data-zh="当前方向">Current Focus</a>
+      <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+    </nav>
+
+    <button
+      id="language-toggle"
+      class="language-toggle"
+      type="button"
+      aria-label="Switch language"
+    >
+      中文
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow" data-en="Personal Homepage" data-zh="个人主页">
+          Personal Homepage
+        </p>
+
+        <h1>Qizhen Liu</h1>
+
+        <p
+          class="hero-subtitle"
+          data-en="Undergraduate student in Intelligent Science and Technology at Nanjing University."
+          data-zh="南京大学智能科学与技术专业本科生。"
+        >
+          Undergraduate student in Intelligent Science and Technology at
+          Nanjing University.
+        </p>
+
+        <p
+          class="hero-meta"
+          data-en="Enrolled in 2025 · Nanjing / Suzhou, China"
+          data-zh="2025 年入学 · 中国南京 / 苏州"
+        >
+          Enrolled in 2025 · Nanjing / Suzhou, China
+        </p>
+
+        <div class="hero-links" aria-label="Profile links">
+          <a
+            class="button primary"
+            href="mailto:251880163@smail.nju.edu.cn"
+            data-en="Email me"
+            data-zh="发送邮件"
+          >
+            Email me
+          </a>
+
+          <a
+            class="button"
+            href="https://github.com/shouhengma0712"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            class="button"
+            href="https://huggingface.co/shouhengma0712"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Hugging Face
+          </a>
+
+          <!-- 注册 ORCID 后，删除下面一行中的 hidden，并把 href 替换成你的 ORCID 页面。 -->
+          <a
+            class="button"
+            href="#"
+            id="orcid-link"
+            hidden
+          >
+            ORCID
+          </a>
+        </div>
+      </div>
+
+      <div class="portrait-wrap">
+        <!-- 把你的个人 Logo 保存为 assets/logo.png，即可自动显示在这里。 -->
+        <img
+          class="portrait"
+          src="assets/logo.png"
+          alt="Personal logo of Qizhen Liu"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="content-section section-shell">
+      <div class="section-heading">
+        <p class="section-index">01</p>
+        <h2 data-en="About" data-zh="关于">About</h2>
+      </div>
+
+      <div class="section-content prose">
+        <p
+          data-en="I am an undergraduate student at Nanjing University, majoring in Intelligent Science and Technology. I am currently building a solid foundation in mathematics, algorithms, machine learning, and artificial intelligence."
+          data-zh="我是南京大学智能科学与技术专业本科生，目前正在系统学习数学、算法、机器学习与人工智能基础。"
+        >
+          I am an undergraduate student at Nanjing University, majoring in
+          Intelligent Science and Technology. I am currently building a solid
+          foundation in mathematics, algorithms, machine learning, and
+          artificial intelligence.
+        </p>
+
+        <p
+          data-en="My present interests include speech processing, multimodal systems, machine learning, and intelligent robotics. This website records my learning, selected coursework, and future work as they gradually take shape."
+          data-zh="我目前关注语音处理、多模态系统、机器学习与智能机器人等方向。这个网站将用于记录我的学习进展、部分课程成果，以及逐步成形的后续工作。"
+        >
+          My present interests include speech processing, multimodal systems,
+          machine learning, and intelligent robotics. This website records my
+          learning, selected coursework, and future work as they gradually take
+          shape.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="content-section section-shell">
+      <div class="section-heading">
+        <p class="section-index">02</p>
+        <h2 data-en="Education" data-zh="教育经历">Education</h2>
+      </div>
+
+      <div class="section-content">
+        <article class="timeline-card">
+          <div>
+            <h3>Nanjing University</h3>
+            <p
+              data-en="Undergraduate student in Intelligent Science and Technology"
+              data-zh="智能科学与技术专业本科生"
+            >
+              Undergraduate student in Intelligent Science and Technology
+            </p>
+          </div>
+          <p class="timeline-date">2025–Present</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="focus" class="content-section section-shell">
+      <div class="section-heading">
+        <p class="section-index">03</p>
+        <h2 data-en="Current Focus" data-zh="当前方向">Current Focus</h2>
+      </div>
+
+      <div class="section-content card-grid">
+        <article class="focus-card">
+          <p class="card-number">01</p>
+          <h3 data-en="Mathematical Foundations" data-zh="数学基础">
+            Mathematical Foundations
+          </h3>
+          <p
+            data-en="Probability, statistics, linear algebra, and the mathematical language used in machine learning."
+            data-zh="概率论、数理统计、线性代数，以及机器学习所需的数学语言。"
+          >
+            Probability, statistics, linear algebra, and the mathematical
+            language used in machine learning.
+          </p>
+        </article>
+
+        <article class="focus-card">
+          <p class="card-number">02</p>
+          <h3 data-en="Algorithms and Systems" data-zh="算法与系统">
+            Algorithms and Systems
+          </h3>
+          <p
+            data-en="Data structures, algorithmic thinking, programming practice, and reproducible experimentation."
+            data-zh="数据结构、算法思维、编程实践与可复现实验。"
+          >
+            Data structures, algorithmic thinking, programming practice, and
+            reproducible experimentation.
+          </p>
+        </article>
+
+        <article class="focus-card">
+          <p class="card-number">03</p>
+          <h3 data-en="Speech and Multimodal AI" data-zh="语音与多模态智能">
+            Speech and Multimodal AI
+          </h3>
+          <p
+            data-en="Speech processing, speaker-related tasks, multimodal learning, and practical AI pipelines."
+            data-zh="语音处理、说话人相关任务、多模态学习与实用人工智能流水线。"
+          >
+            Speech processing, speaker-related tasks, multimodal learning, and
+            practical AI pipelines.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section section-shell">
+      <div class="section-heading">
+        <p class="section-index">04</p>
+        <h2 data-en="Contact" data-zh="联系">Contact</h2>
+      </div>
+
+      <div class="section-content contact-panel">
+        <div>
+          <p class="contact-label" data-en="University email" data-zh="学校邮箱">
+            University email
+          </p>
+          <a href="mailto:251880163@smail.nju.edu.cn">
+            251880163@smail.nju.edu.cn
+          </a>
+        </div>
+
+        <div>
+          <p class="contact-label" data-en="Personal email" data-zh="个人邮箱">
+            Personal email
+          </p>
+          <a href="mailto:shouhengma0712@gmail.com">
+            shouhengma0712@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>
+      © <span id="current-year"></span> Qizhen Liu
+    </p>
+    <p data-en="Built with plain HTML, CSS, and JavaScript." data-zh="使用原生 HTML、CSS 与 JavaScript 构建。">
+      Built with plain HTML, CSS, and JavaScript.
+    </p>
+  </footer>
 </body>
 </html>
